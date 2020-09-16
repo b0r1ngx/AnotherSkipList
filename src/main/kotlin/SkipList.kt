@@ -89,6 +89,7 @@ class SkipList<E : Comparable<E>> {
      *
      * @return `true` if the element has been successfully removed;
      * `false` if it was not present in the collection.
+     *
      */
 //  not delete nodes on top layers...
     fun remove(element: E): Boolean {
