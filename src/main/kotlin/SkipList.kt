@@ -120,9 +120,14 @@ class SkipList<E : Comparable<E>> {
         return element == search(element).value
     }
 
-    // h ->  10 ---------------- 90 <- t
-    // h ->  10 - 30 - 50 - 70 - 90 <- t
-    // returns either node equals to target or next node that is greater than target
+    /**
+     * Searching the specified element is in this collection.
+     *
+     * @return either node equals to target or next node that is greater that targer
+     *
+     * h ->  10 ---------------- 90 <- t
+     * h ->  10 - 30 - 50 - 70 - 90 <- t
+     */
     private fun search(target: E): Node<E> {
         var curr = head.top
 
